@@ -1,0 +1,108 @@
+\documentclass{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\usepackage{titlesec}
+\titleformat{name=\section}[display]
+{\Large \scshape}
+{}
+{-\parskip}{}
+
+\author{Adrian Parvin D. Ouano}
+\usepackage{multicol}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
+
+\setlist[description]{style=multiline,leftmargin=5cm,font=\normalfont\scshape,%
+    align=parright}
+
+\begin {center}
+  \Huge \scshape Adrian Parvin D. Ouano
+\end {center}
+
+\hrulefill
+\section*{Info and Contact Details}
+
+\begin{description} \item [Place \& Date of Birth] Cebu City, Cebu on February 19, 1999
+\item [Address] Lower Hermag, Tabok, Mandaue City
+\item [Phone] +639053069532
+\item [Email Address] \href{mailto:adrianparvino@gmail.com}{mailto:adrianparvino@gmail.com}
+\item [Github] \href{https://github.com/adrianparvino}{https://github.com/adrianparvino}
+\end{description}
+
+\hrulefill
+\section*{Related Skills}
+
+Listed according to confidence:
+
+\begin{multicols}{2}
+\begin {enumerate}
+\item Haskell
+\item C
+\item Nix and Nixops
+\item Lua
+\item \LaTeX
+\item Rust
+\item x86 ASM
+\item HTML+CSS
+\item Prolog
+\item Bash
+\end {enumerate}
+\end{multicols}
+
+\hrulefill
+\section*{Freelancing Experience}
+
+\begin{description}
+% \item [xdup] Duplicates an X window using the XDamage signal. This was created
+%   in order to duplicate a window for 3d viewers.
+%
+%   https://github.com/adrianparvino/xdup
+\item [Private Startup Company] Project packaging and deployment through
+  Nix and NixOps. Focus on automation of deployment and reproducibility of binaries.
+
+\item [Legends of DOTA Redux] Functioned as project manager. Created the git
+  discipline and handled general code quality control.
+
+  \href{https://github.com/darklordabc/Legends-of-Dota-Redux}{https://github.com/darklordabc/Legends-of-Dota-Redux}
+\end{description}
+
+\hrulefill
+\section*{Hobby Projects}
+
+\begin {description}
+\item [Hlibc] A libc implementation targetting Linux and C99. I am responsible
+  for algorithms and refactoring of code in order to reflect more
+  the intent of the programmer. I am also responsible for some of the operations
+  with the use of the Nix tool.
+
+  \href{https://github.com/cmgraff/hlibc}{https://github.com/cmgraff/hlibc}
+
+\item [ASCIIVN] An ASCII art Visual Novel Engine Written in C.
+  This code focuses on highly-performant C that utilizes compiler optimizations
+  while keeping standards compatibility.
+  This code was produced for our Senior High School research paper.
+
+  \href{https://github.com/adrianparvino/asciivn}{https://github.com/adrianparvino/asciivn}
+
+  \href{https://github.com/adrianparvino/asciivn-paper}{https://github.com/adrianparvino/asciivn-paper}
+
+% \item [Mystltoe] A UTF-8 string library implemented in C. I often reference this
+%   to show coding discipline such as Single Responsibility Principle and Apps
+%   Hungarian for system-level manipulation.
+%
+%   \href{https://github.com/adrianparvino/mystltoe}{https://github.com/adrianparvino/mystltoe}
+
+% \item [MyOOS] A hacked-up kernel created in pure NASM in an attempt to fully
+%   modularize the kernel. The kernel core is just a module loader and only spans
+%   217 lines with whitespace.
+%
+%   https://github.com/adrianparvino/MyOOS
+\end{description}
+\end{document}
